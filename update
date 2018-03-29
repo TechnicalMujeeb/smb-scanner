@@ -1,0 +1,4 @@
+echo "$(tput steaf 6) updateing smb-scanner........."
+git pull origin master
+figlet -f small updated !
+echo "$(tput steaf 3) [ updating Finished..]" 
