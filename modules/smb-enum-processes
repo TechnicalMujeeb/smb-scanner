@@ -1,0 +1,18 @@
+#!/bin/sh
+
+clear
+
+figlet  SMB
+figlet  ENUM
+figlet  PROCESSES
+echo ""
+
+echo -n "\033[0;36m[*] Target Url : "
+read b
+if [ ! -z $b ]
+then
+echo "[*] Scanning... "
+nmap -p445 --script smb-enum-processes $b
+else
+echo "\033[31m[!] please Enter target  Url !"
+fi

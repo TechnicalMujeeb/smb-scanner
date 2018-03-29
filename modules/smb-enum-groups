@@ -1,0 +1,18 @@
+#!/bin/sh
+
+clear
+
+figlet SMB
+figlet ENUM
+figlet GROUPS
+echo ""
+
+echo -n "\033[0;36m[*] Target Url : "
+read a
+if [ ! -z $a ]
+then
+echo "[*] Scanning... "
+nmap -p445 --script smb-enum-groups $a
+else
+echo "\033[31m[!] please Enter target  Url"
+fi

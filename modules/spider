@@ -1,0 +1,25 @@
+#!/bin/sh
+
+clear
+
+echo ""
+echo  "\033[31m ██████ ███████ ██      ██ ██████ ██████ \033[0m"
+echo  "\033[31m ██     ██   ██ ██      ██ ██     ██     \033[0m"
+echo  "\033[31m ██████ ███████ ██ ███████ ██████ ██     \033[0m"
+echo  "\033[31m     ██ ██      ██ ██   ██ ██     ██     \033[0m"
+echo  "\033[31m ██████ ██      ██ ███████ ██████ ██     \033[0m"
+echo "########################################################"
+echo " Author : 7grok "
+echo " Tool   : exif-spider "
+echo "########################################################"
+echo""
+
+echo -n "\033[0;36m[*] Target Url : "
+read asu
+if [ ! -z $asu ]
+then
+echo "[*] Scanning..."
+nmap -p 80 --script=http-exif-spider -sV $asu
+else
+echo "\033[31m[+] please Enter url :{"
+fi

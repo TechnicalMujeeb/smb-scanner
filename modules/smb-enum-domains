@@ -1,0 +1,18 @@
+#!/bin/sh
+
+clear
+
+figlet SMB 
+figlet ENUM
+figlet DOMAINS
+echo ""
+
+echo -n "\033[0;32m[*] Target Url : "
+read a
+if [ ! -z $a ]
+then
+echo "[*] Scannning..."
+nmap -p 445 --script smb-enum-domains $a
+else
+echo "[!] Urlmu endi blok?"
+fi

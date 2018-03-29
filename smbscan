@@ -1,0 +1,73 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#bismillah
+
+
+clear
+
+echo -e "\e[1;91m+-----------------------+"
+echo -e "\e[1;91m|                       |"
+echo -e "\e[1;91m|Port Scanning Not Crime|"
+echo -e "\e[1;91m|     SMB SCANNING      |"
+echo -e "\e[1;91m|          Tool         |"
+echo -e "\e[1;91m+-----------------------+"
+echo ""
+echo -e "\e[1;92m[01] SMB BRUTE "
+echo -e "\e[1;93m[02] SMB DOUBLE PULSAR BACKDOOR "
+echo -e "\e[1;95m[03] SMB ENUM DOMAINS "
+echo -e "\e[1;96m[04] SMB ENUM GROUPS "
+echo -e "\e[1;97m[05] SMB ENUM PROCESSES "
+echo -e "\e[1;92m[06] SMB ENUM SESSIONS "
+echo -e "\e[1;93m[07] SMB ENUM  USERS "
+echo -e "\e[1;95m[08] SMB SECURITY MODE "
+echo -e "\e[1;96m[09] SMB SYSTEM INFO "
+echo -e "\e[1;93m[10] DNS BRUTE"
+echo -e "\e[1;95m[11] SPIDER"
+echo -e "\e[1;96m[12] SITEMAP"
+echo -e "\e[1;92m[99] EXIT "
+echo " "
+read -p "select any Tool [01-99] : " pil
+if [ $pil -eq 01 ] ;
+then
+./modules/smb-brute
+elif [ $pil -eq 02 ] ;
+then
+./modules/smb-double-pulsar-backdoor ] ;
+elif [ $pil -eq 03 ] ;
+then
+./modules/smb-enum-domains
+elif [ $pil -eq 04 ] ;
+then
+./modules/smb-enum-groups
+elif [ $pil -eq 05 ] ;
+then
+./modules/smb-enum-processes
+elif [ $pil -eq 06 ] ;
+then
+./modules/smb-enum-sessions
+elif [ $pil -eq 07 ] ;
+then
+./modules/smb-enum-users
+elif [ $pil -eq 08 ] ;
+then
+./modules/smb-security-mode
+elif [ $pil -eq 09 ] ;
+then
+./modules/smb-system-info
+elif [ $pil -eq 10 ] ;
+then
+./modules/dnsbrute 
+elif [ $pil -eq 11 ] ;
+then
+./modules/spider
+elif [ $pil -eq 12 ] ;
+then
+./modules/sitemap
+elif [ $pil -eq 99 ] ;
+then
+exit
+else
+echo "Sorry Enter only Given options number "
+echo -e "\e[1;33m Subscrieb Technical Mujeeb YT channel for more"
+exit
+fi
+

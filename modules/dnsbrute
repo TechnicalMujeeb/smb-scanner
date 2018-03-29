@@ -1,0 +1,28 @@
+#!/bin/sh
+#bismillah
+
+clear
+
+	echo  " \033[31m #################################################\033[0m "
+	echo  " \033[31m # This tool using nse script                    #\033[0m "
+	echo  " \033[31m # gethering the website                         #\033[0m "
+	echo  " \033[31m #################################################\033[0m "
+	echo "        ##############################"
+	echo "        # THIS TOOL NEED ACCESS ROOT #"
+	echo "        # visit http://nmap.org      #"
+	echo "        ##############################"
+	echo " "
+echo -n "[*] Target Url : "
+read anu
+if [ ! -z $anu ]
+then
+echo "\033[0;34m[*] Scanning..."
+sudo nmap -O -sV --open -O --script=dns-brute $anu
+
+else
+
+	echo "\033[31m[+] please Enter url :{"
+
+fi
+
+

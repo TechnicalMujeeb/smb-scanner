@@ -1,0 +1,17 @@
+#!/bin/sh
+
+clear
+
+figlet SMB-BRUTE
+echo ""
+
+echo -n "\033[0;32m[*] Target Url/Ip : "
+read a
+if [ ! -z $a ]
+then
+echo "[*] Looading... "
+echo ""
+nmap -p 445 --script smb-brute $a -d
+else
+echo "\033[31m[!] please Enter target  Url/Ip ! "
+fi

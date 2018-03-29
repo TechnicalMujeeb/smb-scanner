@@ -1,0 +1,18 @@
+#!/bin/sh
+
+clear
+
+figlet SMB
+figlet SYSTEM
+figlet INFO
+echo ""
+
+echo -n "\33[0;36m[*] Target Url : "
+read a
+if [ ! -z $a ]
+then
+echo "[*] Scanning... "
+nmap -p445 --script smb-system-info $a
+else
+echo "\033[31m[!] please Enter target  Url! "
+fi

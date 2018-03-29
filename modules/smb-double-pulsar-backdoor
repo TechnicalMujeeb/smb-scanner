@@ -1,0 +1,16 @@
+#!/bin/sh
+
+clear
+
+cowsay -f stegosaurus 7gork
+echo ""
+
+echo -n "\033[0;32m[*] Target Url : "
+read dancok
+if [ ! -z $dancok ]
+then
+echo "[*] Scanning..."
+nmap -p 445 --script smb-double-pulsar-backdoor.nse $dancok
+else
+echo "\033[31m[!] please Enter target  Url ! "
+fi
