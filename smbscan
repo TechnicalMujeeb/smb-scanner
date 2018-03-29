@@ -3,7 +3,7 @@
 
 
 clear
-echo "        Technical Mujeeb"
+echo -e -e "\e[1;96mTechnical Mujeeb"
 echo -e "\e[1;91m+-----------------------+"
 echo -e "\e[1;91m|                       |"
 echo -e "\e[1;91m|Port Scanning Not Crime|"
