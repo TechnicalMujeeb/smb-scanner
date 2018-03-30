@@ -1,5 +1,5 @@
-echo "$(tput setaf 10)     SMB-SCANNING.
-echo "$(tput setaf 6) updateing smb-scanner........."
+echo "SMB-SCANNING."
+echo "updateing smb-scanner........."
 git pull origin master
 figlet -f small updated !
-echo "$(tput setaf 3) [ updating Finished..]" 
+echo "[ updating Finished..]" 
